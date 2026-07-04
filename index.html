@@ -15,7 +15,7 @@
         content="Automações inteligentes, IA e soluções digitais para acelerar o crescimento da sua empresa, aumentar produtividade e reduzir custos." />
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./assets/fav-icon.png" />
@@ -28,40 +28,97 @@
 </head>
 
 <body>
-    <!-- HEADER  -->
+    <!-- HEADER -->
     <header class="header">
 
         <div class="header-container">
 
-            <!-- LOGO -->
-            <a href="/" class="logo" aria-label="Página inicial GLS AI">
-                <img src="./assets/logo.png" alt="Logo GLS AI" />
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="Página inicial GLS AI">
+                <img src="./assets/logo.png" alt="Logo GLS AI">
             </a>
 
-            <!-- NAVEGAÇÃO -->
+            <!-- Menu Desktop / Mobile -->
             <nav class="navigation" aria-label="Menu principal">
+
                 <ul class="navigation-list">
-                    <li><a href="./index.html">INÍCIO</a></li>
-                    <li><a href="#solutions">SOLUÇÕES</a></li>
-                    <li><a href="#about">SOBRE NÓS</a></li>
-                    <li><a href="#process">COMO FUNCIONA</a></li>
-                    <li><a href="#contact">CONTATO</a></li>
+
+                    <li><a href="#hero">Início</a></li>
+
+                    <li><a href="#solutions">Soluções</a></li>
+
+                    <li><a href="#about">Sobre</a></li>
+
+                    <li><a href="#process">Processo</a></li>
+
+                    <li><a href="#contact">Contato</a></li>
+
                 </ul>
+
             </nav>
 
-            <!-- BOTÃO CTA HEADER -->
-            <a href="" class="header-cta-btn">
-                <span>AGENDAR DIAGNÓSTICO</span>
+            <!-- Botão CTA -->
+            <a href="#contact" class="header-cta-btn">
+
+                <span>Agendar Diagnóstico</span>
+
                 <i class="fa-solid fa-arrow-right"></i>
+
             </a>
+
+            <!-- Botão Mobile -->
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
     </header>
 
+    <!-- Overlay -->
+    <div class="menu-overlay"></div>
+
+    <!-- OVERLAY -->
+    <div class="menu-overlay"></div>
+
+    <!-- MENU MOBILE -->
+    <aside class="mobile-menu" id="mobile-menu">
+
+        <nav class="mobile-navigation">
+
+            <ul class="mobile-navigation-list">
+
+                <li><a href="#hero">INÍCIO</a></li>
+
+                <li><a href="#solutions">SOLUÇÕES</a></li>
+
+                <li><a href="#about">SOBRE NÓS</a></li>
+
+                <li><a href="#process">COMO FUNCIONA</a></li>
+
+                <li><a href="#contact">CONTATO</a></li>
+
+            </ul>
+
+        </nav>
+
+        <a href="" class="hero-btn mobile-cta-btn">
+
+            <span>AGENDAR DIAGNÓSTICO</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </aside>
+
     <main>
 
-        <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <section id="hero" class="hero" aria-labelledby="hero-title">
 
             <div class="hero-container">
 
@@ -85,14 +142,14 @@
                     </p>
 
                     <!-- BOTÕES HERO -->
-                    <div class="hero-buttons">
+                    <div class="hero-button-container">
 
-                        <a href="" class="button-hero-primary">
+                        <a href="" class="hero-btn button-hero-primary">
                             <span>AGENDAR DIAGNÓSTICO</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
-                        <a href="" class="button-hero-ghost">
+                        <a href="#solutions" class="hero-btn button-hero-ghost">
                             <span>CONHECER SOLUÇÕES</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -133,8 +190,6 @@
 
             </div>
 
-            </div>
-
         </section>
 
         <!-- DESTAQUES -->
@@ -159,7 +214,7 @@
                         <img src="./assets/icons/saving-icon-highlights.svg" alt="">
                         <span>Redução de custos</span>
                     </li>
-                    <li class="highlights-item">
+                    <li class="highlights-item highlights-last-item">
                         <img src="./assets/icons/growth-icon-highlights.svg" alt="">
                         <span>Crescimento escalável</span>
                     </li>
@@ -219,8 +274,8 @@
                             inteligência artificial integrada ao WhatsApp.
                         </p>
 
-                        <a href="">
-                            Saiba mais
+                        <a href="" class="saiba-mais">
+                            Ver como funciona
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
@@ -246,8 +301,8 @@
                             a eficiência operacional.
                         </p>
 
-                        <a href="">
-                            Saiba mais
+                        <a href="" class="saiba-mais">
+                            Conhecer soluções
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
@@ -273,8 +328,8 @@
                             e gerar oportunidades.
                         </p>
 
-                        <a href="">
-                            Saiba mais
+                        <a href="" class="saiba-mais">
+                            Ver projetos
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
@@ -300,8 +355,8 @@
                             empresarial.
                         </p>
 
-                        <a href="">
-                            Saiba mais
+                        <a href="" class="saiba-mais">
+                            Solicitar diagnóstico
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
@@ -355,7 +410,7 @@
                     <!-- IMAGEM DA EQUIPE -->
                     <div class="about-image">
 
-                        <img src="./assets/founders-about.png" alt="Imagem dos 3 fundadores da GLS AI">
+                        <img src="./assets/background-about.png" alt="Imagem dos 3 fundadores da GLS AI">
 
                     </div>
 
@@ -364,13 +419,8 @@
 
                         <h3>GLS AI</h3>
 
-                        <span>
-                            Growth. Learning. Solutions.
-                        </span>
-
                         <p>
-                            Mais que um nome, é o que entregamos todos os dias
-                            para os nossos clientes.
+                            Transformamos tecnologia em crescimento para empresas.
                         </p>
 
                     </div>
@@ -404,6 +454,11 @@
 
                         <span class="process-number">
                             01
+
+                            <!-- SETA -->
+                            <div class="process-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
                         </span>
 
                         <h3>
@@ -417,10 +472,7 @@
 
                     </article>
 
-                    <!-- SETA -->
-                    <div class="process-arrow">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+
 
                     <!-- ETAPA 02 -->
                     <article class="process-step">
@@ -432,6 +484,11 @@
 
                         <span class="process-number">
                             02
+
+                            <!-- SETA -->
+                            <div class="process-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
                         </span>
 
                         <h3>
@@ -445,10 +502,6 @@
 
                     </article>
 
-                    <!-- SETA -->
-                    <div class="process-arrow">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
 
                     <!-- ETAPA 03 -->
                     <article class="process-step">
@@ -460,6 +513,12 @@
 
                         <span class="process-number">
                             03
+
+                            <!-- SETA -->
+                            <div class="process-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
                         </span>
 
                         <h3>
@@ -472,11 +531,6 @@
                         </p>
 
                     </article>
-
-                    <!-- SETA -->
-                    <div class="process-arrow">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
 
                     <!-- ETAPA 04 -->
                     <article class="process-step">
@@ -623,42 +677,77 @@
                             <!-- PRIMEIRA LINHA -->
                             <div class="contact-form-row">
 
-                                <input type="text" placeholder="Nome completo" required>
+                                <input type="text" name="name" placeholder="Nome completo" autocomplete="name" required>
 
-                                <input type="text" placeholder="Empresa">
+                                <input type="text" name="company" placeholder="Nome da clínica">
 
                             </div>
 
                             <!-- SEGUNDA LINHA -->
                             <div class="contact-form-row">
 
-                                <input type="email" placeholder="E-mail" required>
+                                <input type="email" name="email" placeholder="E-mail" autocomplete="email" required>
 
-                                <input type="tel" placeholder="WhatsApp / Telefone" required>
+                                <input type="tel" name="phone" placeholder="WhatsApp / Telefone" autocomplete="tel"
+                                    required>
 
                             </div>
 
-                            <!-- SELECT -->
-                            <select required>
+                            <!-- SEGMENTO -->
+                            <div class="select-wrapper">
 
-                                <option selected disabled>
-                                    Segmento da clínica
-                                </option>
+                                <select id="segment" name="segment" required>
 
-                                <option>Clínica estética</option>
+                                    <option value="" selected disabled>
+                                        Segmento da clínica
+                                    </option>
 
-                                <option>Escritório</option>
+                                    <option value="medica">
+                                        Clínica Médica
+                                    </option>
 
-                                <option>Comércio</option>
+                                    <option value="odontologica">
+                                        Clínica Odontológica
+                                    </option>
 
-                                <option>Prestação de Serviços</option>
+                                    <option value="estetica">
+                                        Clínica de Estética
+                                    </option>
 
-                                <option>Outro</option>
+                                    <option value="fisioterapia">
+                                        Clínica de Fisioterapia
+                                    </option>
 
-                            </select>
+                                    <option value="psicologia">
+                                        Clínica de Psicologia
+                                    </option>
+
+                                    <option value="oftalmologia">
+                                        Clínica Oftalmológica
+                                    </option>
+
+                                    <option value="cardiologia">
+                                        Clínica de Cardiologia
+                                    </option>
+
+                                    <option value="dermatologia">
+                                        Clínica de Dermatologia
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- OUTRO SEGMENTO -->
+                            <input type="text" id="other-segment" name="otherSegment"
+                                placeholder="Qual é o segmento da sua clínica?" style="display: none;">
 
                             <!-- MENSAGEM -->
-                            <textarea placeholder="Conte-nos sobre sua necessidade" rows="6"></textarea>
+                            <textarea name="message" placeholder="Conte-nos sobre sua necessidade" rows="6"></textarea>
 
                             <!-- BOTÃO -->
                             <button type="submit" class="contact-submit-btn">
@@ -675,7 +764,9 @@
 
                         <!-- SEGURANÇA -->
                         <div class="contact-security">
+
                             <i class="fa-solid fa-lock"></i>
+
                             <p>
 
                                 Seus dados estão seguros.
@@ -732,12 +823,16 @@
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <p class="copyright">© 2026 GLS AI. Todos os direitos reservados.</p>
         </div>
-    </footer> -->
+    </footer>
 
+    <!-- LINK JAVASCRIPT -->
+    <script src="./script.js"></script>
+
+    <!-- LINK ICONS -->
     <script src="https://kit.fontawesome.com/dafebf265a.js" crossorigin="anonymous"></script>
 </body>
 
